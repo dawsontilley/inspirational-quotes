@@ -1,0 +1,22 @@
+<article class="quote">
+  <div class="title">
+    {{!-- <a href="{{post_url}}" target="_blank">{{title}}</a> --}}
+    {{!-- <span>({{format_url post_url}})</span> --}}
+  </div>
+  <div class="meta">
+    <q>
+    {{quote}}
+    </q>
+    </br>
+    </br>
+    by
+    <cite>
+    {{quoter}}
+    </cite></br>
+    quoted on
+    {{format_date created_at}}
+    |
+    <a href="/quote/{{id}}">{{comments.length}}
+      {{format_plural "comment" comments.length}}</a>
+  </div>
+</article>

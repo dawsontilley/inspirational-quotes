@@ -1,0 +1,20 @@
+<div class="single-quote">
+{{> quote-info quote}}
+</div>
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div class="inputBoxBtn">
+    <button type="submit" class="add-comment-btn">Add Comment</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments quote.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
